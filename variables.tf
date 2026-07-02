@@ -13,7 +13,6 @@ variable "storage_account_name" {
   description = "The storage account name"
 }
 
-
 variable "environment" {
   type        = string
   description = "The environment, either Production or Development"
