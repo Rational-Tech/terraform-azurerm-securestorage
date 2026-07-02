@@ -1,24 +1,20 @@
 variable "resource_group_name" {
-  type = string
+  type        = string
+  description = "Resource Group Name"
 }
 
 variable "location" {
-  type = string
+  type        = string
+  description = "The resource locatoin"
 }
 
 variable "storage_account_name" {
-  type = string
+  type        = string
+  description = "The storage account name"
 }
 
-variable "account_tier" {
-  type        = string
-  description = "The storage account tier: Standard or Premium"
-  default     = "Standard"
-  # Note about validation
-}
 
-variable "account_replication_type" {
+variable "environment" {
   type        = string
-  description = "The storage account replication type: LRS, GRS, RAGRS, ZRS, GZRS, RAGRS"
-  default     = "GRS"
+  description = "The environment, either Production or Development"
 }
